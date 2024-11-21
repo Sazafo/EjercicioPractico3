@@ -28,7 +28,7 @@ public class TiendaAbarrotes {
         // Solicitar los nombres de los productos
         for (int i = 0; i < cantidadProductos; i++) {
             System.out.print("Ingrese el nombre del producto " + (i + 1) + ": ");
-            productos[i] = scanner.next(); // Usamos next() para capturar el nombre del producto
+            productos[i] = scanner.next(); 
         }
 
         // Crear un arreglo para almacenar las ventas de cada día
@@ -39,7 +39,7 @@ public class TiendaAbarrotes {
             System.out.println("Ingrese las ventas para el día " + dias[i] + ":");
             for (int j = 0; j < cantidadProductos; j++) {
                 System.out.print("Ventas del producto " + productos[j] + ": ");
-                ventas[i][j] = scanner.nextInt(); // Usamos nextInt() para capturar las ventas
+                ventas[i][j] = scanner.nextInt(); 
             }
         }
 
