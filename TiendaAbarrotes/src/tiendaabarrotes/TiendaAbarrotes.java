@@ -50,7 +50,7 @@ public class TiendaAbarrotes {
         int[] ventasPorProducto = gestor.calcularVentasPorProducto(ventas, cantidadProductos);
 
         // Mostrar el total de ventas por producto
-        System.out.println("\nTotal de ventas por producto:");
+        System.out.println("Total de ventas por producto:");
         for (int j = 0; j < cantidadProductos; j++) {
             System.out.println(productos[j] + ": " + ventasPorProducto[j]);
         }
@@ -66,14 +66,14 @@ public class TiendaAbarrotes {
         for (int i = 0; i < 7; i++) {
             System.out.print(dias[i] + "\t\t");
             for (int j = 0; j < cantidadProductos; j++) {
-                System.out.print(ventas[i][j] + "\t\t");
+                System.out.print(ventas[i][j] +");
             }
             System.out.println();
         }
 
         // Determinar el día con mayores ventas
         int diaMayor = gestor.determinarDiaMayorVentas(ventas, cantidadProductos);
-        System.out.println("\nEl día con más ventas fue: " + dias[diaMayor]);
+        System.out.println("El día con más ventas fue: " + dias[diaMayor]);
 
         // Determinar el producto más vendido
         int productoMayor = gestor.determinarProductoMasVendido(ventasPorProducto);
